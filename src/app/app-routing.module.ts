@@ -22,6 +22,10 @@ const routes: Routes = [
   ,{
     path: 'inicio-usuario',
     loadChildren: () => import('./folder/inicio-usuario/inicio-usuario.module').then( m => m.InicioUsuarioPageModule)
+  }  
+  ,{
+    path: 'about',
+    loadChildren: () => import('./folder/about/about.module').then( m => m.AboutPageModule)
   }
 ];
 
